@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Eagle Hub</title>
+    <link rel="icon" type="image/jpg" href="Images/Logonew.png">
+    
+
+</head>
+<body>
+    <header >
+        <div class="headertap">
+            <a href="#frontpage"><img src="Images/Logonew.png" alt="">Eagle</a>
+            </div>
+        <div class="links">
+            <a href="#MyServices">My Services</a>
+            <a href="#My work">My Work</a>
+            <a href="#My-Blog">My Blog</a>
+            <a href="#Contact-ME">Contact me</a>
+        
+        </div>
+        <div class="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="dropdown">
+            <li><a href="#MyServices">My Services</a></li>
+            <li><a href="#My work">My Work</a></li>
+            <li><a href="#My-Blog">My Blog</a></li>
+            <li><a href="#Contact-ME">Contact me</a></li>
+        </div>
+    </header>
+    <script>
+        const toggleBtn = document.querySelector('.toggle')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const  dropdownmenu = document.querySelector('.dropdown')
+
+        toggleBtn.onclick = function(){
+            dropdownmenu.classList.toggle('open')
+        }
+    </script>
+    <section class="front" id="frontpage">
+        <h1 class="logo">Welcome to Eagle HUB!</h1>
+        <p class="disc">Hi there, I’m Zakaria Alnsour. I’m interested in Space Science. <span>I am delighted to connect with you. I am here to assist you by providing the best services.</span></p>
+        <a href="#MyServices"><i class="fa-solid fa-server"></i>My Services</a>
+    </section>
+
+    <section class="My-Services" id="MyServices">
+        <h2 class="heading">My Services</h2>
+        <div class="cards">
+            <div class="contentcard">
+                <div class="imagesadded">
+                    <img src="Images/web-design.png" alt="">
+                </div>
+                <div class="infor">
+                    <h2>Website Building</h2>
+                    <p>I build an amazing website for you</p>
+                    <a href="#Contact-ME">Click here</a>
+                    <a href="">Lean more</a>
+                </div>
+            </div>
+            <div class="contentcard">
+                <div class="imagesadded">
+                    <img src="Images/best-video-translator.png" alt="">
+                </div>
+                <div class="infor">
+                    <h2>Video Translater</h2>
+                    <p>Translate your YOUTUBE video for FREE!</p>
+                    <a href="#Contact-ME">Click here</a>
+                    <a href="">Lean more</a>
+                </div>
+            </div>
+            <div class="contentcard">
+                <div class="imagesadded">
+                    <img src="Images/app-development.png" alt="">
+                </div>
+                <div class="infor">
+                    <h2>App Development</h2>
+                    <p>Let's build your application together</p>
+                    <a href="#Contact-ME">Click here</a>
+                    <a href="">Lean more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work -->
+    <section class="Mywork" id="My work">
+        <h2 class="headingW">My Work</h2>
+        <div class="cardsW">
+            <div class="contentcardW">
+                <div class="imagesaddedW">
+                    <img src="Images/Conquer Classes.png" alt="">
+                </div>
+                <div class="infor">
+                    <h2>My Course to better life</h2>
+                    <p>Here are some classes I made for my university</p>
+                    <a href="">Soon!</a>
+                </div>
+            </div>
+            <div class="contentcardW">
+                <div class="imagesaddedW">
+                    <img src="Images/WebsiteDone.png" alt="">
+                </div>
+                <div class="infor">
+                    <h2>Websites For others</h2>
+                    <p>Websites I built before for others</p>
+                    <a href="">Soon!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Blogger -->
+    <section class="MyBloge" id="My-Blog">
+    <h2 class="share">Share what I learn Weekly!</h2>
+    <div class="cardsLearnt">
+        <div class="contentofit">
+            <div class="imagesupported">
+                <!-- add here image -->
+                <img src="Images/Podcasts.png" alt="">
+            </div>
+            <!-- Add here title -->
+            <h3 class="title">podcast</h3>
+            <!-- Add here week number -->
+            <div class="sameline">
+                <h4 class="weekText">Week Number: <span>4</span></h4>
+                <!-- Time Of reading -->
+                <h5 class="readingtime">Reading Time: <span>1min</span></h4>
+                    <!-- add here Desciption -->
+            </div>
+            <p class="des">what i listen to during the tranfrom from to university!</p>
+            <a href="Blogger.html">Click here to read content</a>
+        </div>
+        
+    </div>
+    </section>
+
+    <section class="Contactme" id="Contact-ME">
+        <h2 class="contactzak">Contact me!</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="6637faae-becc-4435-86c5-80d476a72c65">
+            <div>
+                <label for="Contact Name">Name</label>
+                <input type="text" name="Contact Name" id="Contact Name">
+            </div>
+            <div>
+                <label for="Contact Email">Email</label>
+                <input type="email" name="Contact Email" id="Contact Email">
+            </div>
+            <div>
+                <label for="Contact message">your masseage</label>
+                <textarea name="contact message" id="contact message" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <button id="btn">send a message</button>
+                <p class="muted">**all fields are required</p>
+            </div>
+        </form>
+    </section>
+
+    <footer class="BottomLine">
+        <div class="NameFooter">
+            <p>@All copyrights for Eagle HUB</p>
+            <div class="contactme">
+                <a href="https://www.facebook.com/profile.php?id=61550051437505"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/zakaria-a-f-alnsour-a31602343/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
